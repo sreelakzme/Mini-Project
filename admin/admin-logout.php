@@ -1,0 +1,9 @@
+<?php
+session_start();
+$aid=$_SESSION['sessid'];
+if($aid)
+{
+session_unset();
+header("location:index.php");
+}
+?>

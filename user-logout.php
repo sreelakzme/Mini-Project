@@ -1,0 +1,9 @@
+<?php
+session_start();
+$uid=$_SESSION['sessid'];
+if($uid)
+{
+session_unset();
+header("location:index.php");
+}
+?>
